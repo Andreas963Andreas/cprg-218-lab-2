@@ -1,0 +1,76 @@
+<link rel="stylesheet" href="styles.css">
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    min-height: 100vh;
+}
+
+
+header {
+    background-color: #120323;
+    color: #97bf04;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+
+#image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#displayed-image {
+    max-width: 900px;
+    max-height: 600px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); 
+}
+
+#button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+}
+
+#displayed-image {
+    max-width: 900px;
+    max-height: 600px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* top-left shadow on all sides */
+}
+
+
+.gallery-button {
+    background-color: #d9043d; 
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Active Button Styling */
+.gallery-button.active {
+    background-color: #97bf04; 
+}
+
+
+.gallery-button:hover {
+    opacity: 0.9;
+}
